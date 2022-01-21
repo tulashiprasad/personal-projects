@@ -1,0 +1,244 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #231717;
+}
+
+/* ****************NAVIGATION BAR******************* */
+
+#navbar {
+    position: fixed;
+    display: flex;
+    background-color: rgba(56, 49, 49, 1);
+    align-items: center;
+    width: 100%;
+}
+
+#navbar img {
+    height: 50px;
+    width: 61px;
+    filter: invert(100%);
+    padding: 2px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.list li a {
+    margin: 0px 20px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+.list li a:hover {
+    background-color: rgb(218, 108, 108);
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* ************************UTILITY CLASSES**************** */
+
+.text-centre {
+    text-align: center;
+}
+
+/* **********************GREETING-CONTAIENR******************** */
+
+.greeting-container {
+    display: flex;
+    flex-direction: column;
+    height: 33rem;
+    margin: 0rem 27rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.greeting-container::before {
+    content: "";
+    background: url('images/back1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 33rem;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+
+}
+
+.greeting-container h1 {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-bottom: 3rem;
+    color: white;
+    font-size: 3rem;
+}
+
+.greeting-container p {
+    color: white;
+    font-size: 1.25rem;
+}
+
+/* ****************SERVICES-CONTAINER**************** */
+
+.services-container {
+    display: flex;
+    align-items: center;
+    margin: 0px 24px;
+}
+
+.services-container img {
+    height: 205px;
+    width: 232px;
+    padding: 15px;
+    border-radius: 41px;
+}
+
+.services-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #9a5050;
+    margin: 0px 20px;
+    background-color: #dcdcdc;
+    border-radius: 23px;
+    height: 24rem;
+}
+
+.services-container h2 {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.service {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.service h1 {
+    font-family: 'Baloo Bhai 2', cursive;
+    padding: 20px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* ***************CLIANT-CONTAINER******************* */
+
+.clients {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.clients :nth-child(0n+4) {
+    width: 250px;
+}
+
+.clients img {
+    height: 100px;
+    width: 100px;
+    margin: 1rem;
+}
+
+#client {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+}
+#client h1 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: white;
+}
+.client-container {
+    margin-bottom: 30px;
+}
+
+
+/* ******************CONTACT-CONTAINER*************** */
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container::before{
+    content: "";
+    background: url('images/contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 114%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+  
+
+.contact-us h1{
+
+  color: white;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 2.4rem;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+form input {
+    text-align: center;
+    display: block;
+    margin: 15px;
+    width: 44rem;
+    height: 3rem;
+    background-color:#4a3a3a;
+    font-size: 1.4rem;
+    color: black;
+}
+input::placeholder , textarea::placeholder{
+    font-style: none;
+    color: whitesmoke;
+}
+
+label{
+    color: white;
+    font-size: 1.5rem;
+}
+ 
+form textarea {
+    width: 44rem;
+    margin-left: 1rem;
+    background-color: #4a3a3a;
+    font-size: 1.9rem;
+    color:black;
+    text-align: initial;
+    height: 6rem;
+    display: flex;
+    margin-bottom: 3rem;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn {
+    height: 3rem;
+    width: 44rem;
+    background-color: #4a3a3a;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    
+}
+
+footer{
+    background-color: #b32a2a;
+    color: white;
+    font-size: 1.7rem;
+    height: 3rem;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
